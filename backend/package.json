@@ -1,0 +1,31 @@
+{
+  "name": "todo-list-app",
+  "version": "1.0.0",
+  "description": "Advanced To-Do List application with Node.js backend",
+  "main": "backend/server.js",
+"scripts": {
+  "start": "concurrently \"node server.js\" \"start http://localhost:3000\"",
+  "dev": "concurrently \"nodemon server.js\" \"start http://localhost:3000\"",
+  "test": "echo \"Error: no test specified\" && exit 1"
+}
+
+,
+  "keywords": [
+    "todo",
+    "nodejs",
+    "express",
+    "es6"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "nodemon": "^3.0.1",
+    "open": "^9.1.0"
+  }
+}
